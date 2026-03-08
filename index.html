@@ -1,4 +1,49 @@
-<form id="ddg-site-search" action="https://duckduckgo.com/" method="get" target="_blank">
-    <input type="search" name="q" id="ddg-query" placeholder="Search this site..." required />
-    <button type="submit">Search</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .search-container {
+            text-align: center;
+        }
+        .search-input {
+            width: 400px; /* Adjust width as needed */
+            padding: 15px;
+            font-size: 18px;
+            border: 2px solid #0077cc;
+            border-radius: 5px;
+        }
+        .search-button {
+            padding: 15px 20px;
+            font-size: 18px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-button:hover {
+            background-color: #005f99;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <form method="get" action="https://www.duckduckgo.com/" target="_self">
+            <input type="text" name="q" class="search-input" placeholder="Search...">
+            <button type="submit" class="search-button">Search</button>
+        </form>
+    </div>
+</body>
+</html>
